@@ -1,8 +1,8 @@
 # Macro Tracker
 
-A small, reproducible pipeline that downloads macroeconomic time series for Italy from public statistical APIs (Eurostat, ECB and others) and stores them in one tidy, validated CSV file.
+A small, reproducible pipeline that downloads macroeconomic time series from public statistical APIs (Eurostat, ECB and others) and stores them in one tidy, validated CSV file.
 
-- **One command** downloads every configured series and writes `data/processed/italy_macro_series.csv`.
+- **One command** downloads every configured series and writes `data/processed/macro_series.csv`.
 - **One common format**: every row is a single observation (long format) with its source, unit, frequency, download URL and timestamp.
 - **Fails loudly**: a wrong frequency, an ambiguous Eurostat query or an invalid URL stops the run with an explicit message instead of producing silently wrong data.
 
