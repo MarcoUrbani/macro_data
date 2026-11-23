@@ -6,15 +6,6 @@ A small, reproducible pipeline that downloads macroeconomic time series from pub
 - **One common format**: every row is a single observation (long format) with its source, unit, frequency, download URL and timestamp.
 - **Fails loudly**: a wrong frequency, an ambiguous Eurostat query or an invalid URL stops the run with an explicit message instead of producing silently wrong data.
 
-%## Series included
-
-%| Indicator | Source | Dataset / key | Frequency | Description |
-%|---|---|---|---|---|
-%| `it_gdp_q_clv10` | Eurostat | `namq_10_gdp` (`B1GQ`, `CLV10_MEUR`, `SCA`) | Quarterly | Italy, GDP at market prices, chain-linked volumes, million EUR, %seasonally and calendar adjusted |
-%| `eur_usd_m` | ECB | `EXR` / `M.USD.EUR.SP00.A` | Monthly | EUR/USD exchange rate, monthly average (USD per EUR) |
-
-Fetchers for **FRED**, **AMECO** (through the ECB SDMX endpoint) and **OECD** are implemented as well; see [Status and limitations](#status-and-limitations).
-
 ## Quick start
 
 Requires Python 3.10 or newer (developed and tested on 3.12).
