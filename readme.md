@@ -100,8 +100,8 @@ Notes:
 .
 ├── run.py                       # series configuration and pipeline entry point
 ├── fetchers.py                  # one fetcher per source + dispatcher (fetch_series)
-├── macro_tracker_client.py      # HTTP client with timeout, retry and backoff
-├── macro_tracker_scheme.py      # Observation record, validation, period parsing
+├── client.py                    # HTTP client with timeout, retry and backoff
+├── type.py                      # Observation record, validation, period parsing
 ├── tests/                       # offline unit tests (no network)
 ├── data/processed/              # output CSV (created by the pipeline)
 ├── requirements.txt
