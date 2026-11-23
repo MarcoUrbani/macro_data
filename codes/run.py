@@ -9,7 +9,7 @@ from type import Observation, to_validated_dataframe
 
 
 BASE_DIR = Path(__file__).resolve().parent
-OUTPUT_CSV = BASE_DIR / "data" / "processed" / "italy_macro_series.csv"
+OUTPUT_CSV = BASE_DIR / "data" / "processed" / "macro_series.csv"
 
 # Every entry needs `source`, `indicator_code` and `frequency` (A, Q or M).
 # All other keys are passed to the fetcher as keyword arguments.
